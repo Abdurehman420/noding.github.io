@@ -1,0 +1,686 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root{
+
+    
+
+    --primarycolor: white;
+
+    --secondarycolor: #EE9F2C ; 
+}
+
+html{
+    
+    box-sizing: border-box;
+
+   
+   
+}
+body{
+   
+    
+
+   background-color: #1C2127;
+  
+}
+
+
+
+.paraText{
+    font-size: 13px;
+    
+    color: var(--primarycolor);
+
+}
+
+/*  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   CODE FOR SECTION 1
+*/
+
+
+
+.main{
+    
+    display: flex;
+    justify-content: space-between;
+    
+    color: var(--primarycolor);
+   
+    font-size: 13px;
+    font-weight: 400;
+   
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 75%;
+   
+}
+
+.mainleftContent{
+    padding: 20px;
+position: relative;
+}
+.mainLeft{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+     background: linear-gradient(to left bottom, #3D4451,#545A6C);
+     flex: 2;
+ 
+     border-top-left-radius: 20px;
+     border-bottom-left-radius: 20px;
+    
+}
+.contentOne{
+    display: flex;
+    
+    align-items: center;
+    margin: 5vh 0;
+    
+}
+.contentOneleft{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.158);
+}
+
+
+.contentOneleft img{
+    border-radius: 50%;
+    width: 35px;
+    align-self: flex-start;
+}
+.contentOneleft h3{
+    text-transform: none;
+    margin: 0 10px;
+    font-size: 25px ;
+  
+}
+.contentOneleft h3 span{
+    text-transform: uppercase;
+    margin: 0 5px;
+    font-size: 11px;
+    color: var(--secondarycolor);
+    background-color: rgba(0, 0, 0, 0.336);
+    border-radius: 5px;
+    padding: 5px ;
+    
+}
+.mainLeftButton{
+    position: absolute;
+    top: -10px;
+    left: 60px;
+    
+    
+
+}
+.mainLeftButton button{
+    
+    
+    border-radius: 30px;
+    padding: 5px;
+    border:3px solid rgba(0, 0, 0, 0.438) !important;
+    
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    
+
+}
+
+
+.fa-angle-down{
+    padding: 0 10px;
+}
+.contentOneright{
+    margin: 0 10px;
+    display: flex;
+white-space: nowrap;
+   
+    
+}
+.btn{
+    border: none;
+    padding: 5px 12px;
+    border-radius: 30px;
+    background: linear-gradient(to right,#F3C272,#EE9D2B);
+    margin: 0 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 200ms;
+    
+    
+}
+.btn:hover{
+    color: white;
+    background: linear-gradient(to left,#F3C272,#EE9D2B);
+}
+.contentTwo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.068);
+}
+
+.contentTwoWrap{
+    margin: 0 10px;
+    flex: 1;
+}
+
+
+.contentTwobottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 10px;
+    position: relative;
+    
+}
+#nodebottom p{
+    color: rgba(255, 255, 255, 0.295);
+    margin: 10px;
+}
+
+.contentTwobottom input{
+    background: none;
+    padding:10px;
+    border: none;
+    outline: none;
+    width: 60%;
+    caret-color: white;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+
+
+.mainRight{
+   
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: #3F4653;
+    position: relative;
+    z-index: -1;
+    flex: 1;
+   padding: 10px;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
+.mainRightRowOne{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.mainRightRowTwo{
+    display: flex;
+    margin-top: 30px;
+}
+#right{
+    white-space: nowrap;
+}
+.mainRightRowThree {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.mainRightRowThree p{
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color:#1f24299a ;
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.514);
+    white-space: nowrap;
+
+}
+.rightBigPara{
+    font-size: 40px;
+    font-weight: 200 !important;
+    display: flex;
+    align-items: flex-end;
+}
+.rightBigPara span{
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+.rightPara{
+    text-transform: uppercase;
+}
+.rowOneWrap{
+    margin:0px 20px;
+}
+/*  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   CODE FOR DROP DOWN MENU
+*/
+.sidebar {
+    
+      position: absolute;
+      top: 31px;
+      right: -20px;
+      background: linear-gradient(to right bottom , #3F4653 ,#0B0C0E);
+      list-style: none;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+  
+      transition: all 300ms;
+    height: 250px;
+      
+      display: none;
+      
+      justify-content: center;
+      align-items: center;
+      
+    
+    }
+    .sidebarList{
+        display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10px;
+     
+
+    }
+    
+    
+    
+    
+    .sidebarItem {
+       
+      color: black;
+      padding: 15px 0;
+    cursor: pointer;
+    color: white;
+    
+    white-space: nowrap;
+    transition: all 200ms;
+    text-transform: uppercase;
+    
+    font-size: 10px;
+   
+    border-bottom: 1px solid rgba(255, 255, 255, 0.226);
+    font-weight: 400;
+      
+    
+     
+}
+    .sidebarItem:last-child{
+        border-bottom: none;
+    }
+    
+    .sidebarItem a{
+        text-decoration: none;
+        color: white
+    }
+    
+    .sidebarItem:hover{
+       
+            letter-spacing: 1px;
+            color: var(--secondarycolor);
+        }
+        .sidebar li{
+            display: flex;
+            align-items: center;
+        }
+        .sidebar li span{
+            padding: 0 10px;
+        }
+        .sidebar li img{
+            width: 30px;
+            border-radius: 50%;
+            
+        }
+        #contentTwo{
+            cursor: pointer;
+            
+        }
+        
+        .mainLeftButton:hover .sidebar{
+           display: flex;
+        
+        }
+        #contentTwo:hover .sidebar{
+            
+            display: block;
+        
+        }
+        #nodebottom{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+/*  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   CODE FOR SECTION 2
+*/
+
+.transaction{
+    background-color:#3F4653 ; 
+    border-radius: 20px;
+    
+    overflow: hidden;
+    overflow-x: auto;
+    
+    margin: 5% auto;
+   
+    width: 75%;
+    
+}
+
+
+table{
+    
+    font-size:15px !important;
+    color: var(--primarycolor);
+    margin: 70px 0;
+    width: 100%;
+    position: relative;
+    overflow-x: auto;
+    
+    
+    
+}
+table tbody{
+    
+   
+    padding: 15px 0;
+  
+}
+
+
+table td{
+    border-top: 1px solid rgba(255, 255, 255, 0.089);
+   padding: 10px 30px;
+   white-space: nowrap;
+
+ 
+}
+
+table td p{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 4px 0;
+}
+table td p img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+    
+}
+table td  span img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+}
+table td .green{
+    text-transform: uppercase;
+    color: #7AFC47;
+}
+.redPara{
+    color: #E74A38;
+    text-transform: uppercase;
+}
+.orangePara{
+    color: #E73F2C;
+    text-transform: uppercase;
+}
+.imagePara{
+    display: flex;
+    align-items: center;
+}
+
+.tableTopBtn{
+    position:absolute;
+    top: -15px;
+   
+    left:50%;
+    transform: translateX(-50%);
+}
+.tableTopBtn button{
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border: none;
+   
+    font-weight: 700;
+    font-size: 15px;
+    padding: 13px;
+    border-radius: 10px;
+}
+
+.table::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  .table::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  .table::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+
+
+/*  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   CODE FOR MEDIQ QUERIES
+*/
+@media screen and (min-width:1600px){
+    .paraText{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:1332px){
+    .contentOne{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .contentOneleft{
+        border-right: none;
+    }
+    .contentOneright{
+       
+       margin-top: 20px;
+       width: 100%;
+    }
+    .btn{
+        flex: 1;
+    }
+}
+
+/*  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   CODE FOR MEDIQ QUERIES LARGE TABLET
+*/
+@media screen and (max-width:999px){
+    .main{
+        width: 85%;
+    }
+    .transaction{
+        width: 85%;
+    }
+}
+
+
+@media screen and (max-width:922px){
+    .table{
+        font-size: 12px !important;
+    }
+    .paraText{
+        font-size: 12px;
+    }
+    .rightBigPara{
+        font-size: 35px;
+    }
+    .contentTwoWrap{
+        margin: 0 5px;
+    }
+    .contentTwoWrap:first-child{
+        margin-left: 0;
+    }
+    .contentTwoWrap:last-child{
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width:803px){
+    .main{
+        width: 90%;
+    }
+    .transaction{
+        width: 90%;
+    }
+}
+
+
+/*  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   CODE FOR MEDIQ QUERIES SMALL TABLET
+*/
+@media screen and (max-width:768px){
+  .main{
+      flex-direction: column;
+  }
+ 
+  #mainhead{
+    font-size: 34px;
+}
+
+.mainLeft{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.contentOneleft img{
+    
+    align-self: flex-start;
+}
+.mainRight{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.contentTwo{
+    flex-direction: column;
+  align-items: stretch;
+  padding-top: 0;
+  
+
+}
+.contentTwoWrap{
+  margin-top: 10px;
+}
+}
+
+
+@media screen and (max-width:728px){
+
+
+  .contentTwoWrap{
+    
+    padding: 10px 0;
+
+}
+.mainLeftButton button {
+    font-size: 15px;
+    
+}
+.sidebar{
+    left: -14px;
+    top: 34px;
+}
+
+.mainRightRowThree p{
+    margin: 0 5px;
+    
+}
+.rowOneWrap{
+        margin:20px 20px;
+    }
+    .tableTopBtn button{
+        font-size: 10px;
+    padding: 10px
+    }
+}
+
+
+
+/*  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   CODE FOR MEDIQ QUERIES MOBILE
+*/
+
+
+@media screen and (max-width:460px){
+
+    .contentTwo {
+        
+        margin: 40px 0;
+        
+    }
+    .mainRightRowOne {
+        
+        align-items: center;
+    }
+    .contentOneright {
+        padding-top: 30px;
+    }
+    .mainRightRowTwo {
+        
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainRightRowOne {
+        
+        flex-direction: column;
+    }
+    .mainRightRowThree {
+        
+        flex-direction: column;
+    }
+    .mainRightRowThree p {
+        margin: 10px 0;
+    }
+    .rowTwoWrap{
+        margin: 0;
+     }
+     .btn {
+        font-size: 12px;
+      
+        
+    }
+    
+    .contentOneright button{
+        margin: 10px 0;
+        flex: 1;
+    }
+}
+
+@media screen and (max-width:386px){
+   
+    .mainLeftButton button{
+        font-size: 15px;
+        
+    }
+
+
+}
+
